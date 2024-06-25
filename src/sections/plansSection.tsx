@@ -13,20 +13,17 @@ import Link from "next/link";
 
 const plansBronze: { title: string; text: string }[] = [
   {
-    title: "Descontos em consultas",
+    title: "Consultas de Rotina Ilimitadas",
     text: "Agende consultas de rotina sem custos adicionais, garantindo que seu pet receba atenção preventiva regular.",
   },
   {
-    title: "Descontos em vacinas",
+    title: "Vacinação Completa",
     text: "Todas as vacinas essenciais estão incluídas, protegendo seu pet contra doenças todas as doenças mais comuns.",
   },
-  {
-    title: "Descontos em Cirurgias e muito mais",
-    text: "Agende consultas de rotina sem custos adicionais, garantindo que seu pet receba atenção preventiva regular.",
-  },
+ 
 ];
 
-const plansBasic: { title: string; text: string }[] = [
+const plansPrata: { title: string; text: string }[] = [
   {
     title: "Consultas de Rotina Ilimitadas",
     text: "Agende consultas de rotina sem custos adicionais, garantindo que seu pet receba atenção preventiva regular.",
@@ -35,26 +32,32 @@ const plansBasic: { title: string; text: string }[] = [
     title: "Vacinação Completa",
     text: "Todas as vacinas essenciais estão incluídas, protegendo seu pet contra doenças todas as doenças mais comuns.",
   },
+  
+];
+
+const plansOuro: { title: string; text: string }[] = [
   {
-    title: "Descontos em Cirúrgias",
+    title: "Consultas de Rotina Ilimitadas",
     text: "Agende consultas de rotina sem custos adicionais, garantindo que seu pet receba atenção preventiva regular.",
+  },
+  {
+    title: "Vacinação Completa",
+    text: "Todas as vacinas essenciais estão incluídas, protegendo seu pet contra doenças todas as doenças mais comuns.",
   },
 ];
 
-const plansPro: { title: string; text: string }[] = [
+const plansDiamante: { title: string; text: string }[] = [
   {
-    title: "Exames Laboratoriais Ilimitados",
-    text: "Todos os exames necessários para um diagnóstico preciso estão incluídos, sem custos adicionais.",
+    title: "Consultas de Rotina Ilimitadas",
+    text: "Agende consultas de rotina sem custos adicionais, garantindo que seu pet receba atenção preventiva regular.",
   },
   {
-    title: "Nutrição Personalizada",
-    text: "Receba orientação de especialistas para criar uma dieta personalizada para as necessidades específicas do seu pet.",
+    title: "Vacinação Completa",
+    text: "Todas as vacinas essenciais estão incluídas, protegendo seu pet contra doenças todas as doenças mais comuns.",
   },
-  {
-    title: "Atendimento Domiciliar Mensal",
-    text: "Oferecemos a opção de um atendimento domiciliar, proporcionando comodidade para você e conforto para seu pet.",
-  },
+  
 ];
+
 
 const PlansSection = () => {
   const [ref, inView] = useInView({ triggerOnce: false });
@@ -98,7 +101,8 @@ const PlansSection = () => {
                     <Divider className="mt-3" />
                   </div>
                 ))}
-                <span className="w-full text-3xl font-bold">R$99,99/mês</span>
+               
+                <span className="w-full text-3xl font-bold">R$39,90/mês</span>
               </div>
 
               <Button
@@ -120,14 +124,15 @@ const PlansSection = () => {
               </span>
 
               <div className="flex min-h-[30rem] w-full max-w-sm flex-col items-center justify-center gap-4 rounded-t-2xl bg-white p-8 text-black">
-                {plansPro.map((pro, index) => (
+                {plansPrata.map((pro, index) => (
                   <div key={index}>
                     <h4 className="font-bold">{pro.title}</h4>
                     <p className="text-sm font-light">{pro.text}</p>
                     <Divider className="mt-3" />
                   </div>
                 ))}
-                <span className="w-full text-3xl font-bold">R$99,99/mês</span>
+                
+                <span className="w-full text-3xl font-bold">R$79,90/mês</span>
               </div>
 
               <Button
@@ -145,14 +150,14 @@ const PlansSection = () => {
               </span>
 
               <div className="flex min-h-[30rem] w-full max-w-sm flex-col items-center justify-center gap-4 rounded-t-2xl bg-white p-8 text-black">
-                {plansPro.map((pro, index) => (
+                {plansOuro.map((pro, index) => (
                   <div key={index}>
                     <h4 className="font-bold">{pro.title}</h4>
                     <p className="text-sm font-light">{pro.text}</p>
                     <Divider className="mt-3" />
                   </div>
                 ))}
-                <span className="w-full text-3xl font-bold">R$99,99/mês</span>
+                <span className="w-full text-3xl font-bold">R$99,90/mês</span>
               </div>
 
               <Button
@@ -170,14 +175,14 @@ const PlansSection = () => {
               </span>
 
               <div className="flex min-h-[30rem] w-full max-w-sm flex-col items-center justify-center gap-4 rounded-t-2xl bg-white p-8 text-black">
-                {plansPro.map((pro, index) => (
+                {plansDiamante.map((pro, index) => (
                   <div key={index}>
                     <h4 className="font-bold">{pro.title}</h4>
                     <p className="text-sm font-light">{pro.text}</p>
                     <Divider className="mt-3" />
                   </div>
                 ))}
-                <span className="w-full text-3xl font-bold">R$99,99/mês</span>
+                <span className="w-full text-3xl font-bold">R$129,90/mês</span>
               </div>
 
               <Button

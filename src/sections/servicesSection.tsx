@@ -78,7 +78,7 @@ const ServicesSection = () => {
             color="primary"
             endContent={<IoCalendarOutline size={30} className="ml-2" />}
           >
-            Agendar Consulta
+           FALAR COM UM CONSULTOR
           </Button>
         </div>
       </motion.div>

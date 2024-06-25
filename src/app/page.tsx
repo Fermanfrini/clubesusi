@@ -10,12 +10,12 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
       <PlansSection />
       <PaySection/>
       <AboutSection />
       <ValuesSection />
-      <ContactSection />
+      {/* <ContactSection /> */}
     </main>
   );
 }

@@ -293,6 +293,7 @@ const PaySection: React.FC = () => {
           </p>
 
           <div className="flex flex-row items-center justify-between gap-5 md:flex-row">
+
             <div className="flex flex-col items-center justify-center">
               <span className="w-1/2 rounded-t-2xl bg-powerblue-bronze p-2 font-bold">
                 Plano Bronze
@@ -307,56 +308,136 @@ const PaySection: React.FC = () => {
                 ))}
                 <Divider />
 
-                {/* <Button
-              
-
-              className="mt-5 h-14 w-full text-base font-medium uppercase text-white"
-              color="primary"
-              endContent={<HiChevronDoubleDown size={30} className="ml-2" />}
-              
-            >
-              <Link href="#Pay"> CONFERIR COBERTURAS
-              </Link>
-
-            </Button> */}
                 <Button
-                  onClick={() => openModal("Plano Bronze")}
+                  as={Link}
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1eDBWh39WttnlNFWkQ0IsX25dQt2j7e9I/view?usp=drive_link"
+                >
+                  Conferir demais coberturas
+                </Button>
+
+                <Button
+                  as={Link}
+                  target="_blank"
+                  href="https://app.vindi.com.br/customer/pages/cdfcc8ac-5679-4a43-a182-d25d83775a93/subscriptions/new"
                   className="mt-5 h-14 w-full text-base font-medium uppercase text-white"
-              color="primary"
+                  color="primary"
                 >
                   Escolher
                 </Button>
               </div>
             </div>
-
             <div className="flex flex-col items-center justify-center">
-              <span className="w-1/2 rounded-t-2xl bg-powerblue-prata p-2 font-bold">
+              <span className="w-1/2 rounded-t-2xl bg-powerblue-bronze p-2 font-bold">
                 Plano Prata
               </span>
 
               <div className="flex min-h-[30rem] w-full max-w-sm flex-col items-center justify-center gap-4 rounded-t-2xl bg-white p-8 text-black">
-                {plansPrata.map((pro, index) => (
+                {plansBronze.map((pro, index) => (
                   <div key={index}>
                     <h5 className="font-bold">{pro.title}</h5>
                     <p className="text-sm">{pro.text}</p>
                   </div>
                 ))}
                 <Divider />
+
                 <Button
-                  onClick={() => openModal("Plano Prata")}
-                  className="mt-4"
+                  as={Link}
+                  target="_blank"
+                  href="https://drive.google.com/file/d/11SWLe73fsCnLCqZ729CrfIn8cnelUoOx/view"
+                >
+                  Conferir demais coberturas
+                </Button>
+
+                <Button
+                  as={Link}
+                  target="_blank"
+                  href="https://app.vindi.com.br/customer/pages/feca79f2-8951-4758-bc1c-1e023d2eabae/subscriptions/new"
+                  className="mt-5 h-14 w-full text-base font-medium uppercase text-white"
+                  color="primary"
                 >
                   Escolher
                 </Button>
               </div>
             </div>
-          </div>
 
-          <PlanModal
-            isOpen={isModalOpen}
-            setIsOpen={setIsModalOpen}
-            planName={selectedPlan}
-          />
+
+            <div className="flex flex-col items-center justify-center">
+              <span className="w-1/2 rounded-t-2xl bg-powerblue-bronze p-2 font-bold">
+                Plano Ouro
+              </span>
+
+              <div className="flex min-h-[30rem] w-full max-w-sm flex-col items-center justify-center gap-4 rounded-t-2xl bg-white p-8 text-black">
+                {plansBronze.map((pro, index) => (
+                  <div key={index}>
+                    <h5 className="font-bold">{pro.title}</h5>
+                    <p className="text-sm">{pro.text}</p>
+                  </div>
+                ))}
+                <Divider />
+
+                <Button
+                  as={Link}
+                  target="_blank"
+                  href="https://drive.google.com/file/d/17SS1ctsIyIFW36dcZoGeaITKa_0ohyqz/view?usp=drive_link"
+                >
+                  Conferir demais coberturas
+                </Button>
+
+                <Button
+                  as={Link}
+                  target="_blank"
+                  href="https://app.vindi.com.br/customer/pages/9b7212f0-35c6-43e6-bd38-dee33b11b4a0/subscriptions/new"
+                  className="mt-5 h-14 w-full text-base font-medium uppercase text-white"
+                  color="primary"
+                >
+                  Escolher
+                </Button>
+              </div>
+            </div>
+
+
+            <div className="flex flex-col items-center justify-center">
+              <span className="w-1/2 rounded-t-2xl bg-powerblue-bronze p-2 font-bold">
+                Plano Diamante
+              </span>
+
+              <div className="flex min-h-[30rem] w-full max-w-sm flex-col items-center justify-center gap-4 rounded-t-2xl bg-white p-8 text-black">
+                {plansBronze.map((pro, index) => (
+                  <div key={index}>
+                    <h5 className="font-bold">{pro.title}</h5>
+                    <p className="text-sm">{pro.text}</p>
+                  </div>
+                ))}
+                <Divider />
+
+                <Button
+                  as={Link}
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1j1qChiPh6CMM8xK1_LuxFjI19Chr0moX/view?usp=drive_link"
+                >
+                  Conferir demais coberturas
+                </Button>
+
+                <Button
+                  as={Link}
+                  target="_blank"
+                  href="https://app.vindi.com.br/customer/pages/010b2c8a-2409-4c14-a501-219faad12757/subscriptions/new"
+                  className="mt-5 h-14 w-full text-base font-medium uppercase text-white"
+                  color="primary"
+                >
+                  Escolher
+                </Button>
+              </div>
+            </div>
+
+
+
+
+
+
+
+          </div>
         </div>
       </motion.div>
     </section>
