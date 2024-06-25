@@ -12,7 +12,7 @@ export default function Home() {
       <HeroSection />
       {/* <ServicesSection /> */}
       <PlansSection />
-      <PaySection/>
+      {/* <PaySection/> */}
       <AboutSection />
       <ValuesSection />
       {/* <ContactSection /> */}

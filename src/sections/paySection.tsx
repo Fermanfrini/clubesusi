@@ -292,7 +292,7 @@ const PaySection: React.FC = () => {
             garantir que seu companheiro peludo receba cuidados essenciais.
           </p>
 
-          <div className="flex flex-row items-center justify-between gap-5 md:flex-row">
+          <div className="flex flex-col items-center justify-between gap-5 md:flex-row">
 
             <div className="flex flex-col items-center justify-center">
               <span className="w-1/2 rounded-t-2xl bg-powerblue-bronze p-2 font-bold">

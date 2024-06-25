@@ -103,19 +103,26 @@ const PlansSection = () => {
                 ))}
                
                 <span className="w-full text-3xl font-bold">R$39,90/mês</span>
+                <Button
+                  as={Link}
+                  target="_blank"
+                  href="https://app.vindi.com.br/customer/pages/cdfcc8ac-5679-4a43-a182-d25d83775a93/subscriptions/new"
+                  className="mt-5 h-14 w-full text-base font-medium uppercase text-white"
+                  color="primary"
+                >
+                  Escolher
+                </Button>
               </div>
 
               <Button
-              
-
                 className="mt-5 h-14 w-full text-base font-medium uppercase text-white"
                 color="primary"
+              
+                  target="_blank"
                 endContent={<HiChevronDoubleDown size={30} className="ml-2" />}
-                
               >
-                <Link href="#Pay"> CONFERIR COBERTURAS
+               <Link  href="https://drive.google.com/file/d/1eDBWh39WttnlNFWkQ0IsX25dQt2j7e9I/view?usp=drive_link"> CONFERIR COBERTURAS
                 </Link>
-
               </Button>
             </div>
             <div className="flex flex-col items-center justify-center">
@@ -133,14 +140,25 @@ const PlansSection = () => {
                 ))}
                 
                 <span className="w-full text-3xl font-bold">R$79,90/mês</span>
+                <Button
+                  as={Link}
+                  target="_blank"
+                  href="https://app.vindi.com.br/customer/pages/feca79f2-8951-4758-bc1c-1e023d2eabae/subscriptions/new"
+                  className="mt-5 h-14 w-full text-base font-medium uppercase text-white"
+                  color="primary"
+                >
+                  Escolher
+                </Button>
               </div>
 
               <Button
                 className="mt-5 h-14 w-full text-base font-medium uppercase text-white"
                 color="primary"
+              
+                  target="_blank"
                 endContent={<HiChevronDoubleDown size={30} className="ml-2" />}
               >
-                <Link href="#Pay"> CONFERIR COBERTURAS
+               <Link  href="https://drive.google.com/file/d/11SWLe73fsCnLCqZ729CrfIn8cnelUoOx/view"> CONFERIR COBERTURAS
                 </Link>
               </Button>
             </div>
@@ -158,14 +176,25 @@ const PlansSection = () => {
                   </div>
                 ))}
                 <span className="w-full text-3xl font-bold">R$99,90/mês</span>
+                <Button
+                  as={Link}
+                  target="_blank"
+                  href="https://app.vindi.com.br/customer/pages/9b7212f0-35c6-43e6-bd38-dee33b11b4a0/subscriptions/new"
+                  className="mt-5 h-14 w-full text-base font-medium uppercase text-white"
+                  color="primary"
+                >
+                  Escolher
+                </Button>
               </div>
 
               <Button
                 className="mt-5 h-14 w-full text-base font-medium uppercase text-white"
                 color="primary"
+              
+                  target="_blank"
                 endContent={<HiChevronDoubleDown size={30} className="ml-2" />}
               >
-                <Link href="#Pay"> CONFERIR COBERTURAS
+               <Link  href="https://drive.google.com/file/d/17SS1ctsIyIFW36dcZoGeaITKa_0ohyqz/view?usp=drive_link"> CONFERIR COBERTURAS
                 </Link>
               </Button>
             </div>
@@ -183,16 +212,30 @@ const PlansSection = () => {
                   </div>
                 ))}
                 <span className="w-full text-3xl font-bold">R$129,90/mês</span>
+                <Button
+                  as={Link}
+                  target="_blank"
+                  href="https://app.vindi.com.br/customer/pages/010b2c8a-2409-4c14-a501-219faad12757/subscriptions/new"
+                  className="mt-5 h-14 w-full text-base font-medium uppercase text-white"
+                  color="primary"
+                >
+                  Escolher
+                </Button>
               </div>
+              
 
               <Button
                 className="mt-5 h-14 w-full text-base font-medium uppercase text-white"
                 color="primary"
+              
+                  target="_blank"
                 endContent={<HiChevronDoubleDown size={30} className="ml-2" />}
               >
-               <Link href="#Pay"> CONFERIR COBERTURAS
+               <Link  href="https://drive.google.com/file/d/1j1qChiPh6CMM8xK1_LuxFjI19Chr0moX/view?usp=drive_link"> CONFERIR COBERTURAS
                 </Link>
               </Button>
+
+
             </div>
           </div>
         </div>
