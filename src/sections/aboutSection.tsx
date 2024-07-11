@@ -44,19 +44,18 @@ const AboutSection = () => {
             abordagem de cuidados veterinários.
           </p>
 
-          <div className="flex flex-col items-center justify-center rounded-2xl bg-powerblue-dark p-5 text-center xl:p-8">
-            <span className="flex items-center justify-center gap-4 text-2xl font-bold text-powerblue-light xl:text-4xl">
-              <TbTargetArrow size={50} /> NOSSA MISSÃO
-            </span>
-            <p className="mt-5 text-sm font-extralight text-white md:text-base">
-             No Clube Susi, nossa missão é promover a saúde e o bem-estar dos
-              animais de estimação, oferecendo serviços veterinários de alta
-              qualidade. Acreditamos que cada pet merece uma vida saudável e
-              feliz, e estamos comprometidos em fornecer cuidados de elite.
-            </p>
-          </div>
-        </div>
+          <div className="flex flex-col items-center w-full h-full justify-center rounded-2xl bg-powerblue-dark p-5 text-center">
+          <iframe 
+      className="w-full h-full"
+      src="https://www.youtube.com/embed/SWVdzDlfcCY?autoplay=1&controls=1&modestbranding=1&loop=1&playsinline=1"
+  
+    ></iframe>
 
+          </div> 
+       
+
+        </div>
+{/* 
         <Image
           ref={refQuote}
           src={AboutMosaic}
@@ -65,7 +64,8 @@ const AboutSection = () => {
           width={0}
           height={0}
           className="aspect-square h-auto w-full min-w-[50%] p-5"
-        />
+        /> */}
+         
       </motion.div>
     </section>
   );

@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../animation/variants";
 import { useInView } from "react-intersection-observer";
 
+
 const HeroSection = () => {
   const [ref, inView] = useInView({ triggerOnce: false });
   const [refQuote, inViewQuote] = useInView({ triggerOnce: false });
@@ -27,17 +28,15 @@ const HeroSection = () => {
         <div className="flex items-center justify-center">
           <div className="flex w-full flex-col items-center justify-center gap-10 lg:flex-row">
             <div className="flex w-full flex-col items-center justify-center gap-7 px-8 text-center text-white lg:text-start 2xl:w-6/12">
-              <h1 className="text-3xl font-bold md:text-5xl 2xl:text-6xl">
-                A MELHOR ESCOLHA PARA O SEU PET
+              <h1 className="text-2xl font-bold md:text-5xl 2xl:text-2xl">
+               MELHOR AMIGO, MELHOR PLANO.
               </h1>
               <p className="text-sm font-extralight md:text-lg">
-                No Clube Susi, dedicamos nosso cuidado e expertise para garantir a
-                saúde e alegria contínuas do seu companheiro de quatro patas.
-                Oferecemos serviços veterinários excepcionais para manter seu
-                pet sempre saudável e feliz.
+              Economize e tenha o melhor tratamento para o seu Pet. Tudo em um só plano.
               </p>
             
             </div>
+            
 
             <Image
               src={heroBanner}
@@ -47,6 +46,9 @@ const HeroSection = () => {
               width={0}
               height={0}
             />
+  
+
+
           </div>
         </div>
       </motion.div>

@@ -24,13 +24,10 @@ const Header = () => {
       href: "#About",
     },
     {
-      title: "Valores",
+      title: "Dúvidas",
       href: "#Values",
     },
-    {
-      title: "Serviços",
-      href: "#Services",
-    },
+    
     {
       title: "Planos",
       href: "#Plans",
@@ -40,7 +37,7 @@ const Header = () => {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      className="py-14"
+      className="py-4"
     >
       <NavbarContent justify="start">
         <NavbarMenuToggle
@@ -63,9 +60,17 @@ const Header = () => {
       </NavbarContent>
 
       <NavbarContent className="hidden gap-8 md:flex" justify="center">
+      <NavbarItem>
+          <Link
+            className="text-black text-x transition-all duration-300 hover:font-bold"
+            href="#Plans"
+          >
+            Planos
+          </Link>
+        </NavbarItem>
         <NavbarItem>
           <Link
-            className="text-black text-xl transition-all duration-300 hover:font-bold"
+            className="text-black text-x transition-all duration-300 hover:font-bold"
             href="#About"
           >
             Sobre
@@ -73,28 +78,21 @@ const Header = () => {
         </NavbarItem>
         <NavbarItem>
           <Link
-            className="text-black text-xl transition-all duration-300 hover:font-bold"
+            className="text-black text-x transition-all duration-300 hover:font-bold"
             href="#Values"
           >
-            Valores
+            Dúvidas
           </Link>
         </NavbarItem>
-        <NavbarItem>
-          <Link
-            className="text-black text-xl transition-all duration-300 hover:font-bold"
+        {/* <NavbarItem> */}
+          {/* <Link
+            className="text-black text-x transition-all duration-300 hover:font-bold"
             href="#Services"
           >
             Serviços
           </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            className="text-black text-xl transition-all duration-300 hover:font-bold"
-            href="#Plans"
-          >
-            Planos
-          </Link>
-        </NavbarItem>
+        </NavbarItem> */}
+       
       </NavbarContent>
       <NavbarContent justify="end">
         <div className="flex cursor-pointer items-center justify-center gap-4">
