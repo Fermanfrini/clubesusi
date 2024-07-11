@@ -335,7 +335,7 @@ const plans: { [key: string]: Plan[] } = {
 };
 
 const PlanCard: FC<{ plan: Plan; price: string; link: string; downloadLink: string; color: string; planName: string }> = ({ plan, price, link, downloadLink, color, planName }) => (
-  <div className="flex flex-col items-center justify-center w-full">
+  <div className="flex flex-col items-center justify-center w-full p-10 ">
     <span className={`w-1/2 rounded-t-2xl bg- bg-powerblue-${color} p-2 font-bold`}>
       Plano {planName}
     </span>
@@ -343,19 +343,19 @@ const PlanCard: FC<{ plan: Plan; price: string; link: string; downloadLink: stri
       <table className="w-full text-left">
         <thead>
           <tr>
-            <th className="px-4 py-2 border-b-2">Serviço</th>
-            <th className="px-4 py-2 border-b-2">Cobertura</th>
-            <th className="px-4 py-2 border-b-2">Quantidade por Ano</th>
-            <th className="px-4 py-2 border-b-2">Período de Carência</th>
+            <th className="px2 py-2 border-b-2">Serviço</th>
+            <th className="px-2 py-2 border-b-2">Cobertura</th>
+            <th className="px-2 py-2 border-b-2">Quantidade por Ano</th>
+            <th className="px-2 py-2 border-b-2">Período de Carência</th>
           </tr>
         </thead>
         <tbody>
           {plan.items.map((item, index) => (
             <tr key={index}>
-              <td className="px-4 py-2 border-b">{item.name}</td>
-              <td className="px-4 py-2 border-b">{item.coverage}</td>
-              <td className="px-4 py-2 border-b">{item.quantityPerYear}</td>
-              <td className="px-4 py-2 border-b">{item.waitingPeriod}</td>
+              <td className="px-2 py-2 border-b">{item.name}</td>
+              <td className="px-2 py-2 border-b">{item.coverage}</td>
+              <td className="px-2 py-2 border-b">{item.quantityPerYear}</td>
+              <td className="px-2 py-2 border-b">{item.waitingPeriod}</td>
             </tr>
           ))}
         </tbody>
@@ -393,7 +393,7 @@ const PlansSection: FC = () => {
         initial="hidden"
         animate={inView ? "show" : "hidden"}
         exit="hidden"
-        className="relative mx-auto flex w-full flex-col items-center justify-center gap-10 bg-cover bg-center bg-no-repeat py-5 md:py-16 3xl:max-w-[1580px] 3xl:rounded-2xl"
+        className="relative mx-auto flex w-full flex-col items-center justify-center gap-10 bg-cover bg-center bg-no-repeat py-5 md:py-16 2xl:max-w-[1580px] 3xl:rounded-2xl"
       >
         <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-5 p-5 text-center text-white xl:max-w-[1380px]">
           <h4 className="flex items-center justify-center gap-5 text-xl font-bold uppercase lg:text-2xl">
