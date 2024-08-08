@@ -76,7 +76,7 @@ export default function Footer() {
 
   return (
     <footer className="dark:border-gamtech mx-auto w-full cursor-default items-center justify-center bg-powerblue-light pt-8 shadow-xl md:px-0">
-      <section className="flex flex-col items-center justify-around gap-y-4 px-4 pb-8 shadow-xl md:flex-row md:gap-y-0">
+      {/* <section className="flex flex-col items-center justify-around gap-y-4 px-4 pb-8 shadow-xl md:flex-row md:gap-y-0">
         <Link href="/">
           <Image
             src={Logo}
@@ -129,7 +129,7 @@ export default function Footer() {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
     </footer>
   );
 }
